@@ -1,9 +1,10 @@
 import './App.css';
-import { NavBar } from './ui-components';
 
 function App() {
   return (
-    <NavBar />
+    <div>
+      <h1> Hello World! </h1>
+    </div>
   );
 }
 
