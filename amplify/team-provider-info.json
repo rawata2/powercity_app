@@ -10,6 +10,11 @@
       "StackName": "amplify-amplify11d5901c9d904-staging-161905",
       "StackId": "arn:aws:cloudformation:eu-west-1:445734220249:stack/amplify-amplify11d5901c9d904-staging-161905/df454630-764a-11ed-9be9-0ab2dd07c2ad",
       "AmplifyAppId": "d31slar6pesmps"
+    },
+    "categories": {
+      "api": {
+        "powercityapp": {}
+      }
     }
   }
 }
