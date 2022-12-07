@@ -1,9 +1,11 @@
 import './App.css';
+import { AmplifyCollection, NavBar } from './ui-components';
 
 function App() {
   return (
-    <div>
-      <h1> Hello World! </h1>
+    <div className='App'>
+      <NavBar width={"100vw"}/>
+      <AmplifyCollection/>
     </div>
   );
 }

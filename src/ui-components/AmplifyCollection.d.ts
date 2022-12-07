@@ -5,12 +5,16 @@
  **************************************************************************/
 
 import * as React from "react";
-import { AmplifyModel } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { FlexProps } from "@aws-amplify/ui-react";
-export declare type StandardCardProps = React.PropsWithChildren<Partial<FlexProps> & {
-    amplify?: AmplifyModel;
+import { StandardCardProps } from "./StandardCard";
+import { CollectionProps } from "@aws-amplify/ui-react";
+export declare type AmplifyCollectionProps = React.PropsWithChildren<Partial<CollectionProps<any>> & {
+    items?: any[];
+    overrideItems?: (collectionItem: {
+        item: any;
+        index: number;
+    }) => StandardCardProps;
 } & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
-export default function StandardCard(props: StandardCardProps): React.ReactElement;
+export default function AmplifyCollection(props: AmplifyCollectionProps): React.ReactElement;
