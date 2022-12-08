@@ -16,7 +16,7 @@ import {
   Text,
 } from "@aws-amplify/ui-react";
 export default function ProductDetail(props) {
-  const { overrides, ...rest } = props;
+  const { amplifyModel, overrides, ...rest } = props;
   return (
     <Flex
       gap="24px"
@@ -196,7 +196,7 @@ export default function ProductDetail(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="    Hand cut and sewn locally&#xA;    Dyed with our proprietary colors&#xA;    Pre-washed & pre-shrunk&#xA;    Ultra-soft 100% cotton"
+              children=""
               {...getOverrideProps(
                 overrides,
                 "Hand cut and sewn locally Dyed with our proprietary colors Pre-washed & pre-shrunk Ultra-soft 100% cotton"
@@ -375,7 +375,7 @@ export default function ProductDetail(props) {
             size="default"
             isDisabled={false}
             variation="primary"
-            children="Primary Button"
+            children=""
             {...getOverrideProps(overrides, "Button29766972")}
           ></Button>
           <Flex

@@ -6,9 +6,9 @@ import { LazyLoading, LazyLoadingDisabled } from "@aws-amplify/datastore";
 
 
 
-type EagerAmplifyModel = {
+type EagerProduct = {
   readonly [__modelMeta__]: {
-    identifier: ManagedIdentifier<AmplifyModel, 'id'>;
+    identifier: ManagedIdentifier<Product, 'id'>;
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
@@ -16,13 +16,14 @@ type EagerAmplifyModel = {
   readonly price?: string | null;
   readonly description?: string | null;
   readonly image_url?: string | null;
+  readonly stock?: number | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
 
-type LazyAmplifyModel = {
+type LazyProduct = {
   readonly [__modelMeta__]: {
-    identifier: ManagedIdentifier<AmplifyModel, 'id'>;
+    identifier: ManagedIdentifier<Product, 'id'>;
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
@@ -30,12 +31,13 @@ type LazyAmplifyModel = {
   readonly price?: string | null;
   readonly description?: string | null;
   readonly image_url?: string | null;
+  readonly stock?: number | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
 
-export declare type AmplifyModel = LazyLoading extends LazyLoadingDisabled ? EagerAmplifyModel : LazyAmplifyModel
+export declare type Product = LazyLoading extends LazyLoadingDisabled ? EagerProduct : LazyProduct
 
-export declare const AmplifyModel: (new (init: ModelInit<AmplifyModel>) => AmplifyModel) & {
-  copyOf(source: AmplifyModel, mutator: (draft: MutableModel<AmplifyModel>) => MutableModel<AmplifyModel> | void): AmplifyModel;
+export declare const Product: (new (init: ModelInit<Product>) => Product) & {
+  copyOf(source: Product, mutator: (draft: MutableModel<Product>) => MutableModel<Product> | void): Product;
 }

@@ -11,9 +11,9 @@ import {
   getOverrideProps,
   useDataStoreBinding,
 } from "@aws-amplify/ui-react/internal";
-import StandardCard from "./StandardCard";
+import TallCard from "./TallCard";
 import { Collection } from "@aws-amplify/ui-react";
-export default function AmplifyCollection(props) {
+export default function TallCardCollection(props) {
   const { items: itemsProp, overrideItems, overrides, ...rest } = props;
   const itemsDataStore = useDataStoreBinding({
     type: "collection",
@@ -23,21 +23,26 @@ export default function AmplifyCollection(props) {
   return (
     <Collection
       type="grid"
+      isSearchable={true}
+      isPaginated={true}
       searchPlaceholder="Search..."
-      templateColumns="1fr 1fr"
-      autoFlow="row"
+      itemsPerPage={6}
+      templateRows="1fr 1fr"
+      autoFlow="column"
       alignItems="stretch"
       justifyContent="stretch"
       items={items || []}
       {...rest}
-      {...getOverrideProps(overrides, "AmplifyCollection")}
+      {...getOverrideProps(overrides, "TallCardCollection")}
     >
       {(item, index) => (
-        <StandardCard
-          amplify={item}
+        <TallCard
+          product={item}
+          height="auto"
+          margin="0px 0px 0px 0px"
           key={item.id}
           {...(overrideItems && overrideItems({ item, index }))}
-        ></StandardCard>
+        ></TallCard>
       )}
     </Collection>
   );

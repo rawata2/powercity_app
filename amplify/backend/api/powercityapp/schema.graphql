@@ -1,7 +1,9 @@
-type AmplifyModel @model @auth(rules: [{allow: public}]) {
+type Product @model @auth(rules: [{allow: public}]) {
   id: ID!
   title: String
   price: String
   description: String
   image_url: String
+  stock: Int
 }
+ 

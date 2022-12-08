@@ -1,7 +1,7 @@
 export const schema = {
     "models": {
-        "AmplifyModel": {
-            "name": "AmplifyModel",
+        "Product": {
+            "name": "Product",
             "fields": {
                 "id": {
                     "name": "id",
@@ -38,6 +38,13 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
+                "stock": {
+                    "name": "stock",
+                    "isArray": false,
+                    "type": "Int",
+                    "isRequired": false,
+                    "attributes": []
+                },
                 "createdAt": {
                     "name": "createdAt",
                     "isArray": false,
@@ -56,7 +63,7 @@ export const schema = {
                 }
             },
             "syncable": true,
-            "pluralName": "AmplifyModels",
+            "pluralName": "Products",
             "attributes": [
                 {
                     "type": "model",
@@ -84,5 +91,5 @@ export const schema = {
     "enums": {},
     "nonModels": {},
     "codegenVersion": "3.3.2",
-    "version": "945b6ce6b84fc5b8e4b2363e8dac24e9"
+    "version": "e6c303f386db3b6c398dc80004ceed03"
 };

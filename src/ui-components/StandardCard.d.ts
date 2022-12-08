@@ -5,11 +5,11 @@
  **************************************************************************/
 
 import * as React from "react";
-import { AmplifyModel } from "../models";
+import { Product } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { FlexProps } from "@aws-amplify/ui-react";
 export declare type StandardCardProps = React.PropsWithChildren<Partial<FlexProps> & {
-    amplify?: AmplifyModel;
+    amplify?: Product;
 } & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;

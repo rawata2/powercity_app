@@ -4,8 +4,8 @@ import { schema } from './schema';
 
 
 
-const { AmplifyModel } = initSchema(schema);
+const { Product } = initSchema(schema);
 
 export {
-  AmplifyModel
+  Product
 };
