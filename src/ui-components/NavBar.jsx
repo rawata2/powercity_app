@@ -6,6 +6,7 @@
 
 /* eslint-disable */
 import * as React from "react";
+<<<<<<< HEAD
 import {
   getOverrideProps,
   useNavigateAction,
@@ -14,6 +15,12 @@ import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function NavBar(props) {
   const { cart, overrides, ...rest } = props;
   const basketOnClick = useNavigateAction({ type: "url", url: cart?.id });
+=======
+import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
+export default function NavBar(props) {
+  const { overrides, ...rest } = props;
+>>>>>>> c75fb0de8268fdb816b285b81462c37acd2d3de5
   return (
     <Flex
       gap="20px"
@@ -142,9 +149,12 @@ export default function NavBar(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Basket"
+<<<<<<< HEAD
           onClick={() => {
             basketOnClick();
           }}
+=======
+>>>>>>> c75fb0de8268fdb816b285b81462c37acd2d3de5
           {...getOverrideProps(overrides, "Basket")}
         ></Text>
         <View
