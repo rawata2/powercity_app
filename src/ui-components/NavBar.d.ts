@@ -5,9 +5,12 @@
  **************************************************************************/
 
 import * as React from "react";
+import { Cart } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { FlexProps } from "@aws-amplify/ui-react";
 export declare type NavBarProps = React.PropsWithChildren<Partial<FlexProps> & {
+    cart?: Cart;
+} & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
 export default function NavBar(props: NavBarProps): React.ReactElement;
