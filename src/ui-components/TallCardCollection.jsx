@@ -26,7 +26,7 @@ export default function TallCardCollection(props) {
       isSearchable="true"
       isPaginated={true}
       searchPlaceholder="Search..."
-      itemsPerPage={6}
+      itemsPerPage={8}
       templateRows="1fr 1fr"
       autoFlow="column"
       alignItems="stretch"
@@ -39,7 +39,7 @@ export default function TallCardCollection(props) {
         <TallCard
           product={item}
           height="auto"
-          margin="5% 15% 0% 15%"
+          margin="auto auto auto auto"
           width="auto"
           key={item.id}
           {...(overrideItems && overrideItems({ item, index }))}

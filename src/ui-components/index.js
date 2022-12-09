@@ -22,6 +22,7 @@ export { default as EditProfile } from "./EditProfile";
 export { default as ReviewCard } from "./ReviewCard";
 export { default as ActionCard } from "./ActionCard";
 export { default as Features2x2 } from "./Features2x2";
+export { default as Footer } from "./Footer";
 export { default as AmplifyCollection } from "./AmplifyCollection";
 export { default as Features2x3 } from "./Features2x3";
 export { default as FAQItem } from "./FAQItem";
