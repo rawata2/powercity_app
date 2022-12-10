@@ -31,7 +31,6 @@ export { default as MyIcon } from "./MyIcon";
 export { default as ProfileCard } from "./ProfileCard";
 export { default as Ampligram } from "./Ampligram";
 export { default as NavBar } from "./NavBar";
-export { default as ContactUs } from "./ContactUs";
 export { default as HeroLayout4 } from "./HeroLayout4";
 export { default as ItemCard } from "./ItemCard";
 export { default as Features4x1 } from "./Features4x1";
