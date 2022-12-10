@@ -1,5 +1,5 @@
 import './App.css';
-import { TallCardCollection, NavBar } from './ui-components';
+import { TallCardCollection, NavBar, MarketingFooter } from './ui-components';
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <NavBar width={"100vw"}/>
       <br/>
       <TallCardCollection/>
+      <div id="footer"><MarketingFooter/></div>
     </div>
   );
 }
