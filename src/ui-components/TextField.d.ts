@@ -5,11 +5,17 @@
  **************************************************************************/
 
 import * as React from "react";
+import { Product } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { ViewProps } from "@aws-amplify/ui-react";
-export declare type MarketingFooterProps = React.PropsWithChildren<Partial<ViewProps> & {
-    green?: String;
+import { FlexProps } from "@aws-amplify/ui-react";
+export declare type TextFieldProps = React.PropsWithChildren<Partial<FlexProps> & {
+    product?: Product;
+} & {
+    isDisabled?: "false" | "true";
+    labelHidden?: "false" | "true";
+    size?: "default" | "large" | "small";
+    variation?: "default" | "quiet";
 } & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
-export default function MarketingFooter(props: MarketingFooterProps): React.ReactElement;
+export default function TextField(props: TextFieldProps): React.ReactElement;

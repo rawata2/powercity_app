@@ -12,7 +12,7 @@ import {
 } from "@aws-amplify/ui-react/internal";
 import { Image, Text, View } from "@aws-amplify/ui-react";
 export default function MarketingFooter(props) {
-  const { overrides, ...rest } = props;
+  const { green, overrides, ...rest } = props;
   const imageOneOnClick = useNavigateAction({
     type: "url",
     url: "https://www.facebook.com/Meta/",
@@ -51,7 +51,7 @@ export default function MarketingFooter(props) {
         left="0%"
         right="0%"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(0,0,0,1)"
+        backgroundColor="grey"
         {...getOverrideProps(overrides, "Rectangle 738")}
       ></View>
       <Text
@@ -233,7 +233,7 @@ export default function MarketingFooter(props) {
         left="221px"
         padding="0px 0px 0px 0px"
         objectFit="cover"
-        src="https://cdn.shopify.com/s/files/1/0067/0374/3040/files/white_240x240.png?v=1648004714"
+        src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fassets.stickpng.com%2Fimages%2F61fae2d395e6ca00047b4f12.png&f=1&nofb=1&ipt=8be1a7716fc870bf9e0fc13a4c9f56de787bd3cdb945a5306d5922761ce62a28&ipo=images"
         onClick={() => {
           imageOneOnClick();
         }}
@@ -251,7 +251,7 @@ export default function MarketingFooter(props) {
         left="610px"
         padding="0px 0px 0px 0px"
         objectFit="cover"
-        src="https://i.pinimg.com/736x/21/d6/7f/21d67f1d6b3be5bb2e39395311c77fc6.jpg"
+        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatesborodowntown.com%2Fwp-content%2Fuploads%2F2016%2F01%2Finstagram-Logo-PNG-Transparent-Background-download.png&f=1&nofb=1&ipt=49f7186bba41598d8e6c6f77be53bfa4fb3bfeb43fdcdb266e16780c280098bb&ipo=images"
         onClick={() => {
           imageTwoOnClick();
         }}
@@ -269,7 +269,8 @@ export default function MarketingFooter(props) {
         left="870px"
         padding="0px 0px 0px 0px"
         objectFit="cover"
-        src="https://www.shutterstock.com/shutterstock/videos/1063781164/thumb/5.jpg?ip=x480"
+        src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.newdesignfile.com%2Fpostpic%2F2014%2F09%2Ftwitter-bird-logo-transparent_394333.png&f=1&nofb=1&ipt=1255067a87a2728031a470f95aa298d49a0d6836d2c214f238ae016db39bb8c3&ipo=images"
+        backgroundColor="grey"
         onClick={() => {
           imageThreeOnClick();
         }}

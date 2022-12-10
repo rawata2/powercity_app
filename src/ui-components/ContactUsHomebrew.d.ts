@@ -7,9 +7,7 @@
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { ViewProps } from "@aws-amplify/ui-react";
-export declare type MarketingFooterProps = React.PropsWithChildren<Partial<ViewProps> & {
-    green?: String;
-} & {
+export declare type ContactUsHomebrewProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
-export default function MarketingFooter(props: MarketingFooterProps): React.ReactElement;
+export default function ContactUsHomebrew(props: ContactUsHomebrewProps): React.ReactElement;
