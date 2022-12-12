@@ -12,7 +12,7 @@ import {
 } from "@aws-amplify/ui-react/internal";
 import { Image, Text, View } from "@aws-amplify/ui-react";
 export default function MarketingFooter(props) {
-  const { green, overrides, ...rest } = props;
+  const { green, transform, overrides, ...rest } = props;
   const imageOneOnClick = useNavigateAction({
     type: "url",
     url: "https://www.facebook.com/Meta/",
@@ -269,8 +269,8 @@ export default function MarketingFooter(props) {
         left="870px"
         padding="0px 0px 0px 0px"
         objectFit="cover"
-        src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.newdesignfile.com%2Fpostpic%2F2014%2F09%2Ftwitter-bird-logo-transparent_394333.png&f=1&nofb=1&ipt=1255067a87a2728031a470f95aa298d49a0d6836d2c214f238ae016db39bb8c3&ipo=images"
         backgroundColor="grey"
+        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipartcraft.com%2Fimages%2Ftransparent-twitter-logo-small-7.png&f=1&nofb=1&ipt=bfbe93726f41afec8dc5bcfe410c78b33f96aaead1cc303a39acc0b79bc84e58&ipo=images"
         onClick={() => {
           imageThreeOnClick();
         }}

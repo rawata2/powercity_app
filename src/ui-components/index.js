@@ -30,6 +30,7 @@ export { default as Features2x3 } from "./Features2x3";
 export { default as FAQItem } from "./FAQItem";
 export { default as HeroLayout3 } from "./HeroLayout3";
 export { default as MyIcon } from "./MyIcon";
+export { default as ContactUs } from "./ContactUs";
 export { default as ProfileCard } from "./ProfileCard";
 export { default as Ampligram } from "./Ampligram";
 export { default as NavBar } from "./NavBar";

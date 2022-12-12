@@ -7,8 +7,10 @@
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { ViewProps } from "@aws-amplify/ui-react";
+import { SyntheticEvent } from "react";
 export declare type MarketingFooterProps = React.PropsWithChildren<Partial<ViewProps> & {
     green?: String;
+    transform?: (event: SyntheticEvent) => void;
 } & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
