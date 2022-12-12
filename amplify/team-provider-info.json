@@ -1,20 +1,15 @@
 {
-  "staging": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-amplify11d5901c9d904-staging-161905-authRole",
-      "UnauthRoleArn": "arn:aws:iam::445734220249:role/amplify-amplify11d5901c9d904-staging-161905-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::445734220249:role/amplify-amplify11d5901c9d904-staging-161905-authRole",
-      "Region": "eu-west-1",
-      "DeploymentBucketName": "amplify-amplify11d5901c9d904-staging-161905-deployment",
-      "UnauthRoleName": "amplify-amplify11d5901c9d904-staging-161905-unauthRole",
-      "StackName": "amplify-amplify11d5901c9d904-staging-161905",
-      "StackId": "arn:aws:cloudformation:eu-west-1:445734220249:stack/amplify-amplify11d5901c9d904-staging-161905/df454630-764a-11ed-9be9-0ab2dd07c2ad",
-      "AmplifyAppId": "d31slar6pesmps"
-    },
-    "categories": {
-      "api": {
-        "powercityapp": {}
-      }
+    "master": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-powercityapp-master-184845-authRole",
+            "UnauthRoleArn": "arn:aws:iam::445734220249:role/amplify-powercityapp-master-184845-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::445734220249:role/amplify-powercityapp-master-184845-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-powercityapp-master-184845-deployment",
+            "UnauthRoleName": "amplify-powercityapp-master-184845-unauthRole",
+            "StackName": "amplify-powercityapp-master-184845",
+            "StackId": "arn:aws:cloudformation:eu-west-1:445734220249:stack/amplify-powercityapp-master-184845/9bca24a0-7a4d-11ed-8127-0a685e2b11f5",
+            "AmplifyAppId": "d2ns2s5qqdbbis"
+        }
     }
-  }
 }
