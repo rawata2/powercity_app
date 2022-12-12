@@ -13,10 +13,12 @@ import {
 import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function NavBar(props) {
   const { overrides, ...rest } = props;
-  const contactUsOnClick = useNavigateAction({
+  const logoThreeFourSixZeroTwoSevenSevenThreeOnClick = useNavigateAction({
     type: "url",
-    url: "http://localhost:3000/contact",
+    url: "http://localhost:3000/",
   });
+  const accountOnClick = useNavigateAction({ type: "url", url: "profile" });
+  const contactUsOnClick = useNavigateAction({ type: "url", url: "contact" });
   const basketOnClick = useNavigateAction({
     type: "url",
     url: "http://localhost:3000/cart",
@@ -46,6 +48,9 @@ export default function NavBar(props) {
         alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
+        onClick={() => {
+          logoThreeFourSixZeroTwoSevenSevenThreeOnClick();
+        }}
         {...getOverrideProps(overrides, "Logo34602773")}
       >
         <Text
@@ -105,9 +110,11 @@ export default function NavBar(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Account"
+          onClick={() => {
+            accountOnClick();
+          }}
           {...getOverrideProps(overrides, "Account")}
         ></Text>
-        <a href="http://localhost:3000/contact">
         <Text
           fontFamily="Inter"
           fontSize="16px"
@@ -118,6 +125,7 @@ export default function NavBar(props) {
           display="block"
           direction="column"
           justifyContent="unset"
+          textDecoration="underline"
           letterSpacing="0.01px"
           width="unset"
           height="unset"
@@ -133,8 +141,6 @@ export default function NavBar(props) {
           }}
           {...getOverrideProps(overrides, "Contact Us")}
         ></Text>
-        </a>
-        <a href="http://localhost:3000/cart">
         <Text
           fontFamily="Inter"
           fontSize="16px"
@@ -160,7 +166,6 @@ export default function NavBar(props) {
           }}
           {...getOverrideProps(overrides, "Basket")}
         ></Text>
-        </a>
         <View
           width="24px"
           height="24px"

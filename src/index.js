@@ -14,6 +14,7 @@ import Root from "./routes/root";
 import App from './routes/App';
 import Contact from './routes/Contact';
 import Cart from './routes/Cart';
+import Profile from './routes/Profile';
 
 Amplify.configure(awsconfig);
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/Cart",
     element: <Cart />,
+  },
+  {
+    path: "/profile",
+    element: <Profile />,
   },
 ]);
 

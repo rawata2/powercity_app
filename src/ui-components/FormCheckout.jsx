@@ -6,7 +6,10 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  useNavigateAction,
+} from "@aws-amplify/ui-react/internal";
 import {
   Badge,
   Button,
@@ -18,6 +21,7 @@ import {
 import MyIcon from "./MyIcon";
 export default function FormCheckout(props) {
   const { overrides, ...rest } = props;
+  const buttonOnClick = useNavigateAction({ type: "reload" });
   return (
     <Flex
       gap="24px"
@@ -552,6 +556,9 @@ export default function FormCheckout(props) {
           isDisabled={false}
           variation="primary"
           children="Place Order"
+          onClick={() => {
+            buttonOnClick();
+          }}
           {...getOverrideProps(overrides, "Button")}
         ></Button>
       </Flex>
