@@ -96,7 +96,6 @@ export default function NavBar(props) {
           children="Account"
           {...getOverrideProps(overrides, "Account")}
         ></Text>
-        <a href="http://localhost:3000/contact">
         <Text
           fontFamily="Inter"
           fontSize="16px"
@@ -119,7 +118,6 @@ export default function NavBar(props) {
           children="Contact Us"
           {...getOverrideProps(overrides, "Contact Us")}
         ></Text>
-        </a>
         <Text
           fontFamily="Inter"
           fontSize="16px"

@@ -49,7 +49,8 @@ export default function ContactUs2(props) {
         position="absolute"
         top="28px"
         left="73px"
-        padding="0px 0px 0px 0px"
+        padding="20px 30px 20px 30px"
+        backgroundColor="rgba(255,255,255,1)"
         {...getOverrideProps(overrides, "ContactUs")}
       ></ContactUs>
     </View>

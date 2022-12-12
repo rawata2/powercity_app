@@ -6,7 +6,10 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  useNavigateAction,
+} from "@aws-amplify/ui-react/internal";
 import {
   Button,
   Flex,
@@ -18,6 +21,7 @@ import {
 } from "@aws-amplify/ui-react";
 export default function ContactUs(props) {
   const { overrides, ...rest } = props;
+  const buttonOnClick = useNavigateAction({ type: "reload" });
   return (
     <Flex
       gap="24px"
@@ -27,7 +31,8 @@ export default function ContactUs(props) {
       justifyContent="flex-start"
       alignItems="flex-start"
       position="relative"
-      padding="0px 0px 0px 0px"
+      padding="20px 30px 20px 30px"
+      backgroundColor="rgba(255,255,255,1)"
       {...rest}
       {...getOverrideProps(overrides, "ContactUs")}
     >
@@ -144,6 +149,9 @@ export default function ContactUs(props) {
         isDisabled={false}
         variation="primary"
         children="Submit Query"
+        onClick={() => {
+          buttonOnClick();
+        }}
         {...getOverrideProps(overrides, "Button")}
       ></Button>
       <Flex
