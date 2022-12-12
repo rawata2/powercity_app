@@ -9,7 +9,7 @@ import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
 export default function StandardCard(props) {
-  const { amplify, overrides, ...rest } = props;
+  const { overrides, ...rest } = props;
   return (
     <Flex
       gap="0"
@@ -36,7 +36,6 @@ export default function StandardCard(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         objectFit="cover"
-        src={amplify?.image_url}
         {...getOverrideProps(overrides, "image")}
       ></Image>
       <Flex
@@ -84,7 +83,7 @@ export default function StandardCard(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children={amplify?.price}
+            children="$99 USD"
             {...getOverrideProps(overrides, "$99 USD")}
           ></Text>
           <Text
@@ -107,7 +106,7 @@ export default function StandardCard(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children={amplify?.title}
+            children="4bds 3 ba 2,530 sqft - Active"
             {...getOverrideProps(overrides, "4bds 3 ba 2,530 sqft - Active")}
           ></Text>
           <Text
@@ -129,7 +128,7 @@ export default function StandardCard(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children={amplify?.description}
+            children="832 34th Ave, Seattle, WA 98122"
             {...getOverrideProps(overrides, "832 34th Ave, Seattle, WA 98122")}
           ></Text>
         </Flex>

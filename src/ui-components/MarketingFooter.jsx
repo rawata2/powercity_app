@@ -6,25 +6,10 @@
 
 /* eslint-disable */
 import * as React from "react";
-import {
-  getOverrideProps,
-  useNavigateAction,
-} from "@aws-amplify/ui-react/internal";
+import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Image, Text, View } from "@aws-amplify/ui-react";
 export default function MarketingFooter(props) {
-  const { green, transform, overrides, ...rest } = props;
-  const imageOneOnClick = useNavigateAction({
-    type: "url",
-    url: "https://www.facebook.com/Meta/",
-  });
-  const imageTwoOnClick = useNavigateAction({
-    type: "url",
-    url: "https://www.instagram.com/",
-  });
-  const imageThreeOnClick = useNavigateAction({
-    type: "url",
-    url: "https://twitter.com/",
-  });
+  const { overrides, ...rest } = props;
   return (
     <View
       width="1440px"
@@ -34,7 +19,9 @@ export default function MarketingFooter(props) {
       alignItems="unset"
       justifyContent="unset"
       position="relative"
+      border="1px SOLID rgba(128,128,128,1)"
       padding="0px 0px 0px 0px"
+      backgroundColor="rgba(128,128,128,1)"
       {...rest}
       {...getOverrideProps(overrides, "MarketingFooter")}
     >
@@ -51,7 +38,7 @@ export default function MarketingFooter(props) {
         left="0%"
         right="0%"
         padding="0px 0px 0px 0px"
-        backgroundColor="grey"
+        backgroundColor="rgba(128,128,128,1)"
         {...getOverrideProps(overrides, "Rectangle 738")}
       ></View>
       <Text
@@ -233,10 +220,6 @@ export default function MarketingFooter(props) {
         left="221px"
         padding="0px 0px 0px 0px"
         objectFit="cover"
-        src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fassets.stickpng.com%2Fimages%2F61fae2d395e6ca00047b4f12.png&f=1&nofb=1&ipt=8be1a7716fc870bf9e0fc13a4c9f56de787bd3cdb945a5306d5922761ce62a28&ipo=images"
-        onClick={() => {
-          imageOneOnClick();
-        }}
         {...getOverrideProps(overrides, "image 1")}
       ></Image>
       <Image
@@ -251,10 +234,6 @@ export default function MarketingFooter(props) {
         left="610px"
         padding="0px 0px 0px 0px"
         objectFit="cover"
-        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatesborodowntown.com%2Fwp-content%2Fuploads%2F2016%2F01%2Finstagram-Logo-PNG-Transparent-Background-download.png&f=1&nofb=1&ipt=49f7186bba41598d8e6c6f77be53bfa4fb3bfeb43fdcdb266e16780c280098bb&ipo=images"
-        onClick={() => {
-          imageTwoOnClick();
-        }}
         {...getOverrideProps(overrides, "image 2")}
       ></Image>
       <Image
@@ -269,11 +248,6 @@ export default function MarketingFooter(props) {
         left="870px"
         padding="0px 0px 0px 0px"
         objectFit="cover"
-        backgroundColor="grey"
-        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipartcraft.com%2Fimages%2Ftransparent-twitter-logo-small-7.png&f=1&nofb=1&ipt=bfbe93726f41afec8dc5bcfe410c78b33f96aaead1cc303a39acc0b79bc84e58&ipo=images"
-        onClick={() => {
-          imageThreeOnClick();
-        }}
         {...getOverrideProps(overrides, "image 3")}
       ></Image>
     </View>

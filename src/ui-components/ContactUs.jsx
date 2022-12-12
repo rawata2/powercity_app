@@ -11,8 +11,8 @@ import {
   Button,
   Flex,
   Icon,
-  SelectField,
   Text,
+  TextAreaField,
   TextField,
   View,
 } from "@aws-amplify/ui-react";
@@ -22,7 +22,7 @@ export default function ContactUs(props) {
     <Flex
       gap="24px"
       direction="column"
-      width="unset"
+      width="647px"
       height="unset"
       justifyContent="flex-start"
       alignItems="flex-start"
@@ -66,32 +66,6 @@ export default function ContactUs(props) {
           children="Need assistance?"
           {...getOverrideProps(overrides, "Need assistance?")}
         ></Text>
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="400"
-          color="rgba(92,102,112,1)"
-          lineHeight="24px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          letterSpacing="0.01px"
-          width="unset"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          shrink="0"
-          alignSelf="stretch"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea."
-          {...getOverrideProps(
-            overrides,
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea."
-          )}
-        ></Text>
       </Flex>
       <Flex
         gap="16px"
@@ -123,119 +97,53 @@ export default function ContactUs(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="US HELP CENTER"
-          {...getOverrideProps(overrides, "US HELP CENTER")}
-        ></Text>
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="700"
-          color="rgba(92,102,112,1)"
-          lineHeight="24px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="unset"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="/"
-          {...getOverrideProps(overrides, "/")}
-        ></Text>
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="700"
-          color="rgba(92,102,112,1)"
-          lineHeight="24px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="unset"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
           children="SUBMIT A REQUEST"
           {...getOverrideProps(overrides, "SUBMIT A REQUEST")}
         ></Text>
       </Flex>
-      <SelectField
+      <TextField
+        label="Name"
+        placeholder="Enter your Name"
         width="unset"
         shrink="0"
         alignSelf="stretch"
-        label="Label"
-        placeholder="Placeholder"
         size="large"
         isDisabled={false}
         labelHidden={false}
         variation="default"
-        {...getOverrideProps(overrides, "SelectField29766935")}
-      ></SelectField>
+        {...getOverrideProps(overrides, "TextField29766935")}
+      ></TextField>
       <TextField
+        label="Email"
+        placeholder="Enter your Email"
         width="unset"
         shrink="0"
         alignSelf="stretch"
-        label="Label"
-        placeholder="Placeholder"
         size="large"
         isDisabled={false}
         labelHidden={false}
         variation="default"
         {...getOverrideProps(overrides, "TextField29766936")}
       ></TextField>
-      <SelectField
+      <TextAreaField
+        label="Issue"
+        placeholder="Please state your Issue"
         width="unset"
         shrink="0"
         alignSelf="stretch"
-        label="Label"
-        placeholder="Placeholder"
         size="large"
         isDisabled={false}
         labelHidden={false}
         variation="default"
-        {...getOverrideProps(overrides, "SelectField29766937")}
-      ></SelectField>
-      <TextField
-        width="unset"
-        shrink="0"
-        alignSelf="stretch"
-        label="Label"
-        placeholder="Placeholder"
-        size="large"
-        isDisabled={false}
-        labelHidden={false}
-        variation="default"
-        {...getOverrideProps(overrides, "TextField29766938")}
-      ></TextField>
-      <TextField
-        width="unset"
-        shrink="0"
-        alignSelf="stretch"
-        label="Label"
-        placeholder="Placeholder"
-        size="large"
-        isDisabled={false}
-        labelHidden={false}
-        variation="default"
-        {...getOverrideProps(overrides, "TextField29766939")}
-      ></TextField>
+        {...getOverrideProps(overrides, "TextAreaField")}
+      ></TextAreaField>
       <Button
         shrink="0"
         alignSelf="stretch"
         size="large"
         isDisabled={false}
         variation="primary"
-        children="Primary Button"
+        children="Submit Query"
         {...getOverrideProps(overrides, "Button")}
       ></Button>
       <Flex

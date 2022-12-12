@@ -5,12 +5,9 @@
  **************************************************************************/
 
 import * as React from "react";
-import { Product } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { FlexProps } from "@aws-amplify/ui-react";
 export declare type StandardCardProps = React.PropsWithChildren<Partial<FlexProps> & {
-    amplify?: Product;
-} & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
 export default function StandardCard(props: StandardCardProps): React.ReactElement;

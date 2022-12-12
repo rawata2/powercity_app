@@ -10,7 +10,6 @@ import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { FlexProps } from "@aws-amplify/ui-react";
 export declare type TallCardProps = React.PropsWithChildren<Partial<FlexProps> & {
     product?: Product;
-    textGrouping?: React.ReactNode;
 } & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;

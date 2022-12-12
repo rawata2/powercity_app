@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import Root from "./routes/root";
 import App from './routes/App';
+import Contact from './routes/Contact';
 
 Amplify.configure(awsconfig);
 
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/root",
     element: <Root />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
   },
 ]);
 

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
-
+body{
+  background-color: #e9eaec;
+}
 .App {
   text-align: center;
   background-color: #e9eaec;
@@ -59,4 +61,13 @@
   justify-content: center;
   display: flex;
   margin-top: auto;
+}
+
+#contact {
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: auto;
+  background-color: #e9eaec;
 }
