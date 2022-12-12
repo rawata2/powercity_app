@@ -6,10 +6,21 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  useNavigateAction,
+} from "@aws-amplify/ui-react/internal";
 import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function NavBar(props) {
   const { overrides, ...rest } = props;
+  const contactUsOnClick = useNavigateAction({
+    type: "url",
+    url: "http://localhost:3000/contact",
+  });
+  const basketOnClick = useNavigateAction({
+    type: "url",
+    url: "http://localhost:3000/cart",
+  });
   return (
     <Flex
       gap="20px"
@@ -96,6 +107,7 @@ export default function NavBar(props) {
           children="Account"
           {...getOverrideProps(overrides, "Account")}
         ></Text>
+        <a href="http://localhost:3000/contact">
         <Text
           fontFamily="Inter"
           fontSize="16px"
@@ -116,8 +128,13 @@ export default function NavBar(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Contact Us"
+          onClick={() => {
+            contactUsOnClick();
+          }}
           {...getOverrideProps(overrides, "Contact Us")}
         ></Text>
+        </a>
+        <a href="http://localhost:3000/cart">
         <Text
           fontFamily="Inter"
           fontSize="16px"
@@ -138,8 +155,12 @@ export default function NavBar(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Basket"
+          onClick={() => {
+            basketOnClick();
+          }}
           {...getOverrideProps(overrides, "Basket")}
         ></Text>
+        </a>
         <View
           width="24px"
           height="24px"
